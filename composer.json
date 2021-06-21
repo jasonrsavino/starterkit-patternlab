@@ -1,0 +1,32 @@
+{
+  "name":             "jasonrsavino/starterkit-patternlab",
+  "description":      "HJF's Demo StarterKit for Drupal.",
+  "keywords":         ["twig", "pattern lab", "starterkit", "demo"],
+  "homepage":         "http://hjf.org",
+  "license":          "MIT",
+  "type":             "patternlab-starterkit",
+  "authors": [
+    {
+      "name":         "jasonrsavino",
+      "email":        "jason@kanopistudios.com",
+      "role":         "Lead Developer"
+    }
+  ],
+  "support": {
+    "issues":         "https://github.com/jasonrsavino/starterkit-patternlab/issues",
+    "source":         "https://github.com/jasonrsavino/starterkit-patternlab/releases"
+  },
+  "require": {
+    "pattern-lab/core": "^2.0.0",
+    "pattern-lab/patternengine-twig": "^2.0.0"
+  },
+  "extra": {
+    "patternlab": {
+      "dist": {
+        "sourceDir": [
+          { "*": "*" }
+        ]
+      }
+    }
+  }
+}

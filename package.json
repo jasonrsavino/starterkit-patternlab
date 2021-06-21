@@ -1,0 +1,25 @@
+{
+  "name": "@jasonrsavino/starterkit-paternlab",
+  "version": "4.0.0",
+  "description": "HJF's StarterKit for Drupal.",
+  "main": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonrsavino/starterkit-patternlab.git"
+  },
+  "keywords": [
+    "Pattern Lab",
+    "Atomic Design",
+    "Twig",
+    "Starterkit"
+  ],
+  "author": "Jason Savino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonrsavino/starterkit-patternlab/issues"
+  },
+  "homepage": "https://github.com/jasonrsavino/starterkit-patternlab#readme",
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

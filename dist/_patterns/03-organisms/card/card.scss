@@ -1,0 +1,33 @@
+
+@import "../../../css/_settings.scss";
+
+//.c-card styles
+.c-card {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+
+  &__type {
+    color: $darkest-gray;
+    font-size: $cite-font-size;
+    font-weight: $global-weight-bold;
+  }
+  &__content {
+    padding: rem-calc(24 28);
+    @include breakpoint(medium) {
+      padding: rem-calc(44 50);
+    }
+  }
+  &__heading {
+    font-weight: $global-weight-bold;
+    font-family: $font-family-monospace;
+    line-height: 1.2;
+    font-size: rem-calc(22);
+    padding-bottom: rem-calc(25);
+  }
+  .button {
+    margin-top: rem-calc(25);
+    font-weight: $global-weight-bold;
+    padding: rem-calc(15 30.5);
+  }
+} // .c-card

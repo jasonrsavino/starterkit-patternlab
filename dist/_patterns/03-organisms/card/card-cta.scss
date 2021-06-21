@@ -1,0 +1,59 @@
+@import "card.scss";
+
+//.c-card styles
+.c-card {
+  $self: &;
+  // c-card--text styles
+  &--cta {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 5px transparent;
+    color: $white;
+    display: block;
+    padding: rem-calc(40);
+    @include breakpoint(medium) {
+      max-width: 360px;
+      padding: rem-calc(50 55 55);
+    }
+
+    #{ $self }__image {
+      margin-bottom: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #{ $self }__heading {
+      padding-bottom: rem-calc(21);
+      margin-bottom: 0;
+      color: $white;
+    }
+
+    #{ $self }__overlay {
+      color: $white;
+    }
+
+    .c-card__type {
+      color: $white;
+      margin-bottom: 11px;
+    }
+
+    .c-card__content {
+      padding: 0;
+    }
+
+    @include breakpoint(small only) {
+      text-align: center;
+      width: 100%;
+      .c-card__overlay-summary {
+        text-align: left;
+      }
+    }
+
+    &:hover {
+      .button {
+        background-color: $light-blue;
+      }
+      border: solid 5px #c4e2f5;
+    }
+
+  } // .c-card--text
+} // .c-card

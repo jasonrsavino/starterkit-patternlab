@@ -1,0 +1,64 @@
+@import "../../../../css/_settings.scss";
+
+nav.block-utilitymenu,
+nav.block-utilitymenu-2 {
+  @include breakpoint(medium) {
+  padding: rem-calc(15 0);
+  text-align: right;
+  .menu {
+    justify-content: flex-end;
+  }
+  li {
+    padding: 0;
+    line-height: auto;
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      padding: rem-calc(17 35 16 0);
+      margin-top: 0;
+      color: $darkest-gray;
+      font-size: rem-calc(14);
+      font-weight: 500;
+      &:not(.button) {
+        text-decoration: underline;
+      }
+      &.button {
+        padding: rem-calc(17 35 16);
+        font-weight: bold;
+        font-size: rem-calc(16);
+        margin-left: rem-calc(10);
+      }
+     }
+    }
+  }
+
+  @include breakpoint(small only) {
+    .menu {
+      flex-direction: column;
+      margin: rem-calc(30 0);
+      li {
+        text-align: right;
+        a {
+          color: #ffffff;
+          font-weight: $global-weight-bold;
+          padding: 15px 30px;
+          line-height: 1.71;
+          &:hover {
+            background-color: $light-blue;
+            color: $darkest-gray;
+          }
+          &.button {
+            background-color: transparent;
+            text-align: right;
+            margin: 0;
+            border-radius: 0;
+            &:hover {
+              background-color: $light-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

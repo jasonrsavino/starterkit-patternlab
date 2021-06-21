@@ -1,0 +1,20 @@
+<li class="c-slide orbit-slide {{ active }}">
+  <div class="slide-content">
+    <div class="slide-text">
+      {% if title|render %}
+        <div class="slide-title">{{ title }}</div>
+      {% endif %}
+      {% if summary|render %}
+        <div class="slide-summary">{{ summary }}</div>
+      {% endif %}
+      {% if button|render %}
+        <div class="slide-button button">{{ button }}</div>
+      {% endif %}
+    </div>
+    <div class="slide-image">
+      {% if image|render %}
+        {{ image }}
+      {% endif %}
+    </div>
+  </div>
+</li>

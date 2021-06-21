@@ -1,0 +1,82 @@
+@import "../../css/_settings.scss";
+
+.wf-loading {
+  background: url('../images/ajax-loader.gif') no-repeat center center;
+  height: 100%;
+  overflow: hidden;
+}
+.wf-loading * {
+  opacity: 0;
+}
+.wf-active *, 
+.wf-inactive * {
+  -webkit-transition: opacity .01s ease-out;  
+  -moz-transition: opacity .01s ease-out; 
+  -o-transition: opacity .01s ease-out;  
+  transition: opacity .01s ease-out;  
+}
+
+html {
+  font-size: $global-font-size-small;
+  @include breakpoint(medium) {
+    font-size: $global-font-size;
+  }
+}
+
+body {
+  font-family: $body-font-family;
+  color: $body-font-color;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-monospace;
+  font-weight: 600;
+}
+
+h1 {
+  line-height: 1.22;
+  letter-spacing: 0.3px;
+  margin-bottom: .75em;
+}
+
+h2 {
+  line-height: 1.29;
+  letter-spacing: 0.2px;
+}
+h3 {
+  line-height: 1.21;
+  letter-spacing: 0.2px;
+}
+h4 {
+  color: $darkest-blue;
+  letter-spacing: 0.1px;
+}
+h5 {
+  font-family: $body-font-family;
+}
+
+.section-funding-opportunities {
+  .hero-id-237 {
+    overflow-x: auto; // Needed for table on mobile.
+  }
+  @include breakpoint(small only) {
+    .c-content {
+      padding: 0 1em;
+    }
+    .hero-id-237 {
+      padding: 1em;
+    }
+    .RADSFilter {
+      width: 280px;
+    }
+    #opportunities_table_filter {
+      width: 280px;
+    }
+  }
+}

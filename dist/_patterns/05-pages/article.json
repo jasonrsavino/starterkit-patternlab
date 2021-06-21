@@ -1,0 +1,17 @@
+{
+  "page": {
+    "content": {
+      "join()": [
+        "<div id=\"block-pagetitle\" class=\"block-pagetitle\">",
+        "templates-page-title",
+        "</div></div>",
+        "organisms-wysiwyg",
+        "<div class=\"grid-container\"><div class=\"grid-x grid-margin-x\"><div class=\"medium-6 medium-offset-3\">",
+        "organisms-image",
+        "</div></div></div>",
+        "organisms-wysiwyg",
+        "organisms-wysiwyg"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../../css/_settings.scss";
+@import 'foundation';
+
+
+.block-social {
+  @include breakpoint(small only) {
+    ul {
+      justify-content: center;
+    }
+  }
+  li {
+    margin: 0 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      background-color: #ffffff;
+      width: 25px;
+      height: 25px;
+      text-indent: -500px;
+      overflow: hidden;
+      padding: 0;
+      &:hover {
+        background-color: $light-blue;
+      }
+      &.facebook {
+        background: transparent url(../images/svg/icon-Facebook-white.svg) no-repeat;
+        width:10px;
+      }
+      &.twitter {
+        background: transparent url(../images/svg/icon-Twitter-white.svg) no-repeat;
+        width: 25px;
+      }
+      &.linkedin {
+        background: transparent url(../images/svg/icon-LinkedIn-white.svg) no-repeat;
+        width: 21px;
+      }
+      &.paypal {
+        background: transparent url(../images/svg/icon-PayPal.svg) no-repeat;
+      }
+    }
+  }
+}

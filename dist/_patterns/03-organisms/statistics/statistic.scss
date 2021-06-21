@@ -1,0 +1,19 @@
+@import "../../../css/_settings.scss";
+
+.statistic {
+  flex-grow: 1;
+  flex-basis: auto;
+  text-align: center;
+
+  .stat-number {
+    font-size: 80px;
+    font-weight: $global-weight-bold;
+    color: $darkest-blue;
+  }
+  .stat-title {
+    font-family: $font-family-monospace;
+    font-size: 22px;
+    font-weight: $global-weight-bold;
+    color: $darkest-gray;
+  }
+}

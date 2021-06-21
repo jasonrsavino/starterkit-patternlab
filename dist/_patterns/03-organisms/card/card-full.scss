@@ -1,0 +1,83 @@
+@import "../../../css/_settings.scss";
+@import "foundation";
+
+.c-card--img_full {
+  display: flex;
+  align-items: center;
+
+  .c-card__image {
+    margin-bottom: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .c-card--content {
+    background-color: $white;
+
+    @include breakpoint(medium) {
+      @include xy-cell(7);
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: rem-calc(75px 50px);
+    }
+    @include breakpoint(large) {
+      @include xy-cell(5);
+      margin-top: 126px;
+      margin-bottom: 126px;
+    }
+    h3 {
+      font-family: $font-family-monospace;
+      font-size: rem-calc(35);
+      line-height: 1.29;
+      letter-spacing: 0.2px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+  }
+
+  @include breakpoint(small only) {
+
+    background-image: none !important;
+
+    h3 {
+      margin-top: 19px;
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+    .button-wrapper {
+      text-align: center;
+      .button {
+        margin-top: 30px;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.c-card--img_left_full {
+  .grid-x {
+    flex-direction: row;
+  }
+  
+  .c-card-content {
+    @include xy-cell-offset(1);
+  }
+}
+
+.c-card--img_right_full {
+  .grid-x {
+    flex-direction: row-reverse;
+  }
+  @include breakpoint(medium) {
+    .c-card--content {
+      margin-right: calc(8.333%);
+      //     @include xy-cell-offset(6);
+    }
+  }
+}
